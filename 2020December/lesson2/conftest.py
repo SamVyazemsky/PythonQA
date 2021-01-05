@@ -18,11 +18,11 @@ def set_time():
     print(last_date - start_date)
 
 
-@pytest.fixture(params=(10,20,30,40,50))
+@pytest.fixture(params=(10, 20, 30, 40, 50))
 def stop_num(request):
     return request.param
 
 
-@pytest.fixture(params=(1,2,3,4,5))
+@pytest.fixture(params=(1, 2, 3, 4, 5))
 def start_num(request, stop_num):
     return request.param, stop_num
