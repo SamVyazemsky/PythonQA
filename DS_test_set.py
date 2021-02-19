@@ -1,7 +1,6 @@
 import pytest
 
 test_data_set1 = {'charmander', 'meow', 'charmander', 'zealot'}
-
 test_data_set2 = {'pikapika', 'auff', 'pikapika', 'zealot'}
 
 A = {1, 2, 3}
@@ -10,7 +9,6 @@ B = {3, 2, 5, 1}
 
 def test_set_remove_element():
     test_data_set1.remove('charmander')
-
     assert 'charmander' not in test_data_set1
 
 
